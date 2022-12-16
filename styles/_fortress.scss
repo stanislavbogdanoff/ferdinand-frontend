@@ -1,0 +1,78 @@
+@import "./variables";
+
+.fort_slider-wrapper {
+  width: 100%;
+}
+
+.fortress_slider {
+  width: 100%;
+
+  &.lined {
+    margin-bottom: 35px;
+
+    &::after {
+      bottom: -60px;
+    }
+  }
+}
+
+.fortress_slide {
+  height: 346px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fortress_wrapper {
+  .circle-btn {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .fortress_slide {
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .fortress_slide {
+    height: 600px;
+  }
+
+  .fortress_content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .fortress_slider {
+    width: 55%;
+    margin-right: 70px;
+  }
+
+  .fortress_wrapper.wrapper.ver {
+    align-items: flex-start;
+
+    p,
+    .body_title {
+      text-align: left;
+    }
+
+    p {
+      color: $text-dark;
+    }
+
+    .body_title {
+      color: $black;
+      margin-bottom: 10px;
+    }
+  }
+
+  .fortress_section .white_bg {
+    height: 83%;
+  }
+}

@@ -1,0 +1,90 @@
+@import "./variables";
+
+.granite_grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 40px;
+}
+
+.granite_slider {
+  width: 50%;
+}
+
+.granite_content {
+  width: 100%;
+}
+
+.granite_desk {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.granite_card-img {
+  margin-bottom: 20px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.granite_card-content {
+  p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: $text-dark;
+  }
+}
+
+.granite_card-title {
+  text-transform: uppercase;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: $black;
+  margin-bottom: 10px;
+}
+
+.granite_slide {
+  height: 550px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .granite_content {
+    margin-left: 100px;
+
+    .body_title {
+      text-align: center;
+    }
+  }
+
+  .granite_card-title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+
+  .granite_card-content p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: $text-light;
+  }
+
+  .granite_section {
+    padding-bottom: 0;
+    margin-bottom: -50px;
+  }
+}

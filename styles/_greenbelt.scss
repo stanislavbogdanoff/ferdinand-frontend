@@ -1,0 +1,31 @@
+.map-box {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .greenbelt_wrapper.wrapper.ver {
+        flex-direction: row-reverse;
+    }
+
+    .greenbelt_section {
+        .body_title {
+            text-align: left;
+        }
+
+        .body_title-box {
+            width: 50%;
+
+            &.lined.lined-down::after {
+                display: none;
+            }
+        }
+    }
+
+    .map-box {
+        width: 50%;
+        margin-right: 100px
+    }
+
+
+
+}

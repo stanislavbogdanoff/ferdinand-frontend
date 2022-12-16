@@ -1,0 +1,68 @@
+@import "./variables";
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 18px;
+
+  input {
+    width: 80%;
+  }
+}
+
+.form_section {
+  background-image: url("/images/form/form_bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 160px 0;
+
+  p {
+    color: rgba(242, 242, 242, 1);
+  }
+
+  button {
+    margin-top: 66px;
+  }
+}
+
+.form_section.moreform_section {
+  background-image: url("/images/sections/moreform_bg.png");
+}
+
+@media screen and (min-width: 768px) {
+  .form_section .container {
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+
+    .circle-btn.lined {
+      margin-bottom: 0;
+    }
+  }
+
+  .form_wrapper.wrapper.ver {
+    width: 50%;
+  }
+
+  .form_section {
+    background-image: url("/images/form/form_bg-d.png");
+  }
+
+  .form_section.moreform_section {
+    background-image: url("/images/form/moreform_bg-d.png");
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .form_wrapper.wrapper.ver {
+    width: 35%;
+
+    input {
+      width: 70%;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+@import "./variables";
+
+.navmob {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $bg;
+  z-index: -1;
+  transition: 0.3s;
+  opacity: 0.5;
+
+  &.active {
+    height: 90vh;
+    opacity: 1;
+  }
+
+  .anim-link::after {
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .anim-link:hover {
+    &::after {
+      width: 65px;
+    }
+  }
+}
+
+.navmob_ul {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  row-gap: 50px;
+
+  li:first-child::after {
+    display: none;
+  }
+
+  li {
+    overflow: visible;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 65px;
+      height: 1px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -25px;
+      background-color: $text-dark;
+    }
+  }
+
+  a {
+    overflow: visible;
+    color: $text-light;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: center;
+    text-transform: uppercase;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}

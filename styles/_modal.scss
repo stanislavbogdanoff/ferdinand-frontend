@@ -1,0 +1,54 @@
+.modal {
+  z-index: 99999;
+  position: relative;
+  .form_wrapper.wrapper.ver {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .circle-btn {
+    margin-top: 100px !important;
+  }
+}
+
+.MuiPaper-root {
+  margin: 10px !important;
+  padding: 50px 35px;
+  padding: 35px;
+  border-radius: 0;
+  color: #fff;
+  background-image: url("/images/sections/suc_bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 99999;
+  .body_title,
+  .body_title-box p {
+    color: #fff;
+  }
+  .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    opacity: 0.7;
+    transition: 0.3s;
+    background-image: url("/images/icons/close.svg");
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .MuiPaper-root {
+    height: 100vh;
+    width: 100vw;
+    padding: 30px 15px;
+  }
+}
