@@ -1,4 +1,5 @@
 import { ContentWrapper } from "./contentwrapper";
+import ModalBtn from "./ModalBtn";
 
 export default function Gene() {
   return (
@@ -11,8 +12,8 @@ export default function Gene() {
                 ЛУЧШИЙ, <br /> В СВОЕМ РОДЕ
               </div>
               <p>
-                Три просторные террасы станут вашим любимым местом отдыха, ведь с
-                них открывается отличный вид на город. Проводите время в кругу
+                Три просторные террасы станут вашим любимым местом отдыха, ведь
+                с них открывается отличный вид на город. Проводите время в кругу
                 семьи и друзей, наслаждаясь свежим воздухом. Террасы отделаны
                 экологичной и долговечной термомодифицированной древесиной.
               </p>
@@ -21,9 +22,7 @@ export default function Gene() {
         </ContentWrapper>
       </div>
       <div className="circle-btn-box">
-        <button className="circle-btn lined">
-          Хочу здесь <br /> жить
-        </button>
+        <ModalBtn />
       </div>
     </section>
   );

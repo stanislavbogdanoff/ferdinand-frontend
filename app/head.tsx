@@ -1,3 +1,5 @@
+import loader from "./loader";
+
 export default function Head() {
   return (
     <>

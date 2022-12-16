@@ -10,6 +10,10 @@
 
   .icon-btn {
     margin-bottom: 18px;
+    img {
+      width: 40px;
+      height: 40px;
+    }
   }
 
   p {
@@ -19,6 +23,10 @@
     letter-spacing: 0px;
     text-align: left;
     color: $text-light;
+    text-transform: lowercase;
+    &::first-letter {
+      text-transform: uppercase;
+    }
   }
 }
 

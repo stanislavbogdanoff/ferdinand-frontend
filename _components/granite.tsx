@@ -60,9 +60,9 @@ export default function Granite() {
                     {curSlide === 1 ? (
                       <motion.div
                         key={Math.random() * 100}
-                        initial={{ opacity: 0.5, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 0.5, x: 20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: 0, x: 20 }}
                         transition={{
                           duration: 0.3,
                         }}
@@ -82,9 +82,9 @@ export default function Granite() {
                     ) : (
                       <motion.div
                         key={Math.random() * 100}
-                        initial={{ opacity: 0.5, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 0.5, x: 20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: 0, x: 20 }}
                         transition={{
                           duration: 0.3,
                         }}

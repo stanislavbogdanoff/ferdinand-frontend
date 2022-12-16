@@ -2,3 +2,14 @@
   width: 100%;
   position: relative;
 }
+
+.best_slide-title {
+  text-transform: lowercase;
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+.best_slide.tech {
+  height: 260px;
+}

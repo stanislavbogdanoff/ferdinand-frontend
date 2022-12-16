@@ -15,20 +15,16 @@
     "@next/font": "^13.0.6",
     "@pbe/react-yandex-maps": "^1.2.2",
     "@types/react-dom": "18.0.9",
-    "aos": "^3.0.0-beta.6",
     "eslint": "8.29.0",
     "eslint-config-next": "13.0.6",
     "framer-motion": "^7.9.1",
-    "fslightbox": "^3.3.1",
     "fslightbox-react": "^1.6.2-2",
-    "google-map-react": "^2.2.0",
     "next": "13.0.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-number-format": "^5.1.2",
     "sass": "^1.56.2",
-    "swiper": "^8.4.5",
-    "yet-another-react-lightbox": "^2.2.3"
+    "swiper": "^8.4.5"
   },
   "devDependencies": {
     "@types/fslightbox-react": "^1.4.2",

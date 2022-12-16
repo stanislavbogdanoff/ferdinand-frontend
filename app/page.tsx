@@ -1,4 +1,3 @@
-import { Suspense } from "react";
 import Hero from "../_components/hero";
 import Timeless from "../_components/timeless";
 import Fortress from "../_components/fortress";
@@ -21,25 +20,27 @@ import PageWrapper from "../_components/pagewrapper";
 
 export default function MainPage() {
   return (
-    <PageWrapper>
-      <div className="main_page">
-        <Hero />
-        <Timeless />
-        <Fortress />
-        <Feautures />
-        <Form />
-        <Granite />
-        <Center />
-        <Best />
-        <Gene />
-        <Greenbelt />
-        <Techs />
-        <Standarts />
-        <Natural />
-        <Plans />
-        <Gallery />
-        <MoreForm />
-      </div>
-    </PageWrapper>
+    <>
+      <PageWrapper>
+        <div className="main_page">
+          <Hero />
+          <Timeless />
+          <Fortress />
+          <Feautures />
+          <Form />
+          <Granite />
+          <Center />
+          <Best />
+          <Gene />
+          <Greenbelt />
+          <Techs />
+          <Standarts />
+          <Natural />
+          <Plans />
+          <Gallery />
+          <MoreForm />
+        </div>
+      </PageWrapper>
+    </>
   );
 }

@@ -569,6 +569,12 @@ img {
 }
 
 @media screen and (min-width: 1024px) {
+  .fixed-link {
+    width: 60px;
+    height: 60px;
+    right: 20px;
+    bottom: 20px;
+  }
   section {
     padding: 100px 0;
   }
