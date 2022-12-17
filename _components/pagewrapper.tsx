@@ -11,7 +11,7 @@ export default function PageWrapper({
 }) {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    setTimeout(() => setLoading(false), 20000);
+    setTimeout(() => setLoading(false), 1000);
   }, []);
   return (
     <>
