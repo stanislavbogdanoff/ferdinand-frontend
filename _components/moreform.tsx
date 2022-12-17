@@ -31,7 +31,7 @@ export default function MoreForm() {
                 name="Email"
                 placeholder="Email"
               />
-              <ModalBtn />
+              <ModalBtn lined />
             </form>
           </div>
         </ContentWrapper>

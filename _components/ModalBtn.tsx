@@ -2,13 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import Button from "@mui/material/Button";
-import TextField from "@mui/material/TextField";
 import Dialog from "@mui/material/Dialog";
-import DialogActions from "@mui/material/DialogActions";
-import DialogContent from "@mui/material/DialogContent";
-import DialogContentText from "@mui/material/DialogContentText";
-import DialogTitle from "@mui/material/DialogTitle";
 import MaskedInput from "./MaskedInput";
 
 export default function ModalBtn(props: any) {
@@ -24,7 +18,7 @@ export default function ModalBtn(props: any) {
 
   return (
     <>
-      <button className="circle-btn" onClick={handleClickOpen}>
+      <button className={`circle-btn ${props.lined ? "lined" : ""} ${props.dark ? "dark" : ""} `} onClick={handleClickOpen}>
         оставить <br /> заявку
       </button>
       {open ? (

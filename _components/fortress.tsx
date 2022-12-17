@@ -55,7 +55,7 @@ export default function Fortress() {
                 </p>
               </div>
               <FortressSlider />
-              <ModalBtn />
+              <ModalBtn lined dark />
             </div>
           ) : (
             <div className="fortress_content">
@@ -73,7 +73,7 @@ export default function Fortress() {
                     из лучших районов Столицы.
                   </p>
                 </div>
-                <ModalBtn />
+                <ModalBtn lined dark />
               </div>
             </div>
           )}

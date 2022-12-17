@@ -103,7 +103,7 @@ export default function Footer() {
                   />
                 </svg>
               </a>
-              <a href="https://wa.me/77777777777" className="icon-btn">
+              <a href="https://wa.me/77018885050" className="icon-btn">
                 <svg
                   width="20"
                   height="20"
@@ -136,7 +136,7 @@ export default function Footer() {
                 </svg>
               </a>
             </div>
-            <a href="abc-design.kz" className="footer_abc">
+            <a href="https://abc-design.kz/" className="footer_abc">
               <Image src={abc} alt="ABC DESIGN" />
             </a>
           </div>

@@ -1,5 +1,6 @@
 import BestSlider from "./BestSlider";
 import { ContentWrapper } from "./contentwrapper";
+import { TitleWrapper } from "./titlewrapper";
 
 export default function Best() {
   return (
@@ -8,7 +9,7 @@ export default function Best() {
         <ContentWrapper>
           <div className="best_wrapper wrapper ver">
             <div className="body_title-box">
-              <div className="body_title">ЛУЧШИЕ ТЕХНОЛОГИИ</div>
+              <TitleWrapper><div className="body_title">ЛУЧШИЕ ТЕХНОЛОГИИ</div></TitleWrapper>
               <p>
                 Множество исследований и испытаний, привлечение зарубежных
                 технических специалистов и развитый инженерно — проектировочный

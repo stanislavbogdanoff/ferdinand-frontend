@@ -22,7 +22,7 @@ export default function Gene() {
         </ContentWrapper>
       </div>
       <div className="circle-btn-box">
-        <ModalBtn />
+        <ModalBtn lined />
       </div>
     </section>
   );

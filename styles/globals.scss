@@ -40,7 +40,7 @@
 .loading {
   width: 100vw;
   height: 100vh;
-  background-color: rgb(61, 61, 61);
+  background-color: #272627;
   color: #fff;
   z-index: 99999;
   position: fixed;
@@ -59,13 +59,11 @@ video {
 }
 
 .page.loading {
-  display: none;
   opacity: 0;
   background-color: rgb(61, 60, 62);
 }
 
 .page {
-  display: block;
   opacity: 1;
   background-color: #fff;
 }
@@ -285,10 +283,12 @@ button {
     -webkit-transform: scale(1);
     transform: scale(1);
   }
+
   50% {
     -webkit-transform: scale(1.3);
     transform: scale(1.3);
   }
+
   100% {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -338,6 +338,7 @@ button {
     -webkit-animation: beat 0.3s;
     animation: beat 0.3s;
   }
+
   &:active::before {
     -webkit-animation: none;
     animation: none;
@@ -417,6 +418,7 @@ button {
 }
 
 .link-w-img {
+
   img,
   svg {
     margin: auto;
@@ -542,7 +544,7 @@ img {
   background-color: #fff !important;
 }
 
-.swiper-horizontal > .swiper-scrollbar,
+.swiper-horizontal>.swiper-scrollbar,
 .swiper-scrollbar.swiper-scrollbar-horizontal {
   position: static !important;
 }
@@ -575,6 +577,7 @@ img {
     right: 20px;
     bottom: 20px;
   }
+
   section {
     padding: 100px 0;
   }

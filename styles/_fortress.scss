@@ -41,6 +41,14 @@
     height: 600px;
   }
 
+  .fortress_section .circle-btn.lined.dark::after {
+    left: -130px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 1px;
+    width: 150px;
+  }
+
   .fortress_content {
     width: 100%;
     display: flex;

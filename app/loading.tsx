@@ -1,19 +1,29 @@
 "use client";
-import { useState, useEffect } from "react";
-export default function Loading() {
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    setTimeout(() => setLoading(false), 350000);
-  });
+import { motion, AnimatePresence } from "framer-motion";
+
+export default function Loading(props: any) {
   return (
     <>
-      {loading ? (
-        <div className="loading">
-          <video width="700" autoPlay muted>
-            <source src={"/images/ferdinand.mp4"} />
-          </video>
-        </div>
-      ) : null}
+      <AnimatePresence>
+
+        {props.loading &&
+          (
+            <motion.div
+              initial={{ opacity: 1 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="loading"
+              key={1}
+            >
+              <video width="700" autoPlay muted>
+                <source src={"/images/ferdinand.mp4"} />
+              </video>
+            </motion.div>
+
+          )
+        }
+
+      </AnimatePresence>
     </>
   );
 }

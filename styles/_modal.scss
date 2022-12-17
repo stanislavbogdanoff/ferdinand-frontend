@@ -1,6 +1,7 @@
 .modal {
   z-index: 99999;
   position: relative;
+
   .form_wrapper.wrapper.ver {
     width: 100%;
     justify-content: center;
@@ -9,10 +10,12 @@
 
   .circle-btn {
     margin-top: 100px !important;
+    margin-bottom: 0 !important;
   }
 }
 
 .MuiPaper-root {
+  height: fit-content;
   margin: 10px !important;
   padding: 50px 35px;
   padding: 35px;
@@ -23,10 +26,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 99999;
+
   .body_title,
   .body_title-box p {
     color: #fff;
   }
+
   .close-btn {
     position: absolute;
     top: 15px;
@@ -39,6 +44,7 @@
     background-repeat: no-repeat;
     height: 30px;
     width: 30px;
+
     &:hover {
       opacity: 1;
     }

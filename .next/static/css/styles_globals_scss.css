@@ -335,10 +335,6 @@ header.shown {
   .hide {
     top: -76px;
   }
-  .progress-bar,
-  .progress-bar.show {
-    top: 76px;
-  }
 }
 @media screen and (max-width: 425px) {
   .header_logo {
@@ -349,6 +345,9 @@ header.shown {
   }
   .header_wrap {
     padding: 3px 0;
+  }
+  .hide {
+    top: -62px;
   }
 }
 /* variables */
@@ -479,6 +478,13 @@ header.shown {
 @media screen and (min-width: 1024px) {
   .fortress_slide {
     height: 600px;
+  }
+  .fortress_section .circle-btn.lined.dark::after {
+    left: -130px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 1px;
+    width: 150px;
   }
   .fortress_content {
     width: 100%;
@@ -1267,9 +1273,12 @@ form input {
 }
 .modal .circle-btn {
   margin-top: 100px !important;
+  margin-bottom: 0 !important;
 }
 
 .MuiPaper-root {
+  height: -moz-fit-content;
+  height: fit-content;
   margin: 10px !important;
   padding: 50px 35px;
   padding: 35px;
@@ -1321,7 +1330,7 @@ form input {
 .loading {
   width: 100vw;
   height: 100vh;
-  background-color: rgb(61, 61, 61);
+  background-color: #272627;
   color: #fff;
   z-index: 99999;
   position: fixed;
@@ -1340,13 +1349,11 @@ video {
 }
 
 .page.loading {
-  display: none;
   opacity: 0;
   background-color: rgb(61, 60, 62);
 }
 
 .page {
-  display: block;
   opacity: 1;
   background-color: #fff;
 }
