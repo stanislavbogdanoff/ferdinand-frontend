@@ -11,13 +11,13 @@ export default function PageWrapper({
 }) {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    setTimeout(() => setLoading(false), 1500);
+    setTimeout(() => setLoading(false), 1900);
   }, []);
   return (
     <>
       {
         loading ? (
-          <Loading loading={loading} />
+          <Loading />
         ) : (
           <div className={loading ? "page loading" : "page"}>
             <motion.div>{children}</motion.div>

@@ -1328,7 +1328,7 @@ form input {
   font-weight: normal;
 }
 /* for scroll */
-.loading {
+.loading.loader {
   width: 100vw;
   height: 100vh;
   background-color: #272627;
@@ -1342,6 +1342,11 @@ form input {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.3s;
+  opacity: 1;
+}
+.loading.loader.fade {
+  opacity: 0;
 }
 
 video {

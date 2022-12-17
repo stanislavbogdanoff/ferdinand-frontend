@@ -37,7 +37,7 @@
 //   }
 // }
 
-.loading {
+.loading.loader {
   width: 100vw;
   height: 100vh;
   background-color: #272627;
@@ -51,6 +51,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.3s;
+  opacity: 1;
+
+  &.fade {
+    opacity: 0;
+  }
 }
 
 video {
